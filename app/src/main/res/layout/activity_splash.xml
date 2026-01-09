@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo_tx_splash"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/logo_aplikasi"
+        android:src="@drawable/logo_tx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_konverter_suhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/konverter_suhu"
+        android:textColor="@color/text_splash"
+        android:textSize="24sp"
+        android:fontFamily="@font/luckiest_guy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_tx_splash" />
+
+    <TextView
+        android:id="@+id/text_selamat_datang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/halo_selamat_datang"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/luckiest_guy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_konverter_suhu" />
+
+    <ImageView
+        android:id="@+id/logo_kota_bekasi"
+        android:layout_width="249dp"
+        android:layout_height="249dp"
+        android:contentDescription="@string/logo_kota_bekasi"
+        android:src="@drawable/kota_bekasi"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

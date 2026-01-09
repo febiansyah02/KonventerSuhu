@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/text_pilih_konversi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/pilih_konversi"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:fontFamily="@font/inter_bold" />
+
+        <Button
+            android:id="@+id/btn_ctof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="69dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/celcius_to_fahrenheit"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_regular"
+            android:backgroundTint="@color/blue_primary"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:onClick="openCtoFActivity"/>
+
+        <Button
+            android:id="@+id/btn_ftoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="69dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/fahrenheit_to_celcius"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_regular"
+            android:backgroundTint="@color/blue_primary"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:onClick="openFtoCActivity"/>
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="69dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="64dp"
+            android:text="@string/tentang_aplikasi"
+            android:textSize="20sp"
+            android:fontFamily="@font/inter_regular"
+            android:backgroundTint="@color/blue_primary"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:onClick="openAboutActivity"/>
+
+        <ImageView
+            android:id="@+id/logo_tx_main"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:contentDescription="@string/logo_aplikasi"
+            android:src="@drawable/logo_tx"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textSize="12sp"
+            android:textColor="@color/darker_gray"
+            android:fontFamily="@font/inter_regular" />
+
+    </LinearLayout>
+</ScrollView>

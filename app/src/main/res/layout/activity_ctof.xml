@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_light"
+    tools:context=".CtoFActivity">
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/kembali"
+        android:src="@drawable/ic_navigate_back"
+        android:onClick="onBackPressed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/icon_suhu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/ikon_termometer"
+        android:src="@drawable/gambar_suhu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_konverter_suhu_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/konverter_suhu"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_regular"
+        app:layout_constraintEnd_toEndOf="@id/icon_suhu"
+        app:layout_constraintStart_toStartOf="@id/icon_suhu"
+        app:layout_constraintTop_toBottomOf="@id/icon_suhu" />
+
+    <TextView
+        android:id="@+id/text_konversi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celcius_to_fahrenheit"
+        android:textSize="28sp"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_konverter_suhu_mini" />
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="@string/masukkan_suhu_celcius"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_konversi_title"
+        android:autofillHints="no" />
+
+    <Button
+        android:id="@+id/btn_konversi"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/konversi"
+        android:textSize="24sp"
+        android:fontFamily="@font/inter_regular"
+        android:backgroundTint="@color/blue_primary"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:onClick="convertTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

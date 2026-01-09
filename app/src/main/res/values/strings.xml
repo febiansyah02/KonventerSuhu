@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KonverterSuhu</string>
+    <string name="logo_aplikasi">Logo Aplikasi</string>
+    <string name="logo_kota_bekasi">Logo Kota Bekasi</string>
+    <string name="konverter_suhu">KONVERTER SUHU</string>
+
+    <string name="halo_selamat_datang">HALO, SELAMAT DATANG</string>
+
+    <string name="pilih_konversi">Pilih Konversi</string>
+    <string name="celcius_to_fahrenheit">Celsius → Fahrenheit</string>
+    <string name="fahrenheit_to_celcius">Fahrenheit → Celsius</string>
+
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="konversi">Konversi</string>
+    <string name="masukkan_suhu_celcius">Masukkan suhu Celcius</string>
+    <string name="masukkan_suhu_fahrenheit">Masukkan suhu Fahrenheit</string>
+    <string name="hasil_dalam">Hasil dalam Fahrenheit:</string>
+    <string name="kembali_ke_halaman_utama">Kembali ke Halaman Utama</string>
+    <string name="ikon_termometer">Ikon Termometer</string>
+    <string name="kembali">Kembali</string>
+    <string name="copyright">© 2025 Konverter Suhu. All Rights Reserved.</string>
+
+    <string name="pengaturan">Pengaturan</string>
+    <string name="pilih_logo_daerah">Pilih Logo Daerah</string>
+    <string name="ganti_logo_daerah">Ganti Logo Daerah</string>
+
+    <string-array name="list_daerah_nama">
+        <item>Kota Bekasi</item>         <item>Kota Bandung (Sunda)</item>
+        <item>Provinsi Jawa Tengah (Jawa)</item>
+    </string-array>
+
+    <string-array name="list_daerah_drawable">
+        <item>kota_bekasi</item>
+        <item>kota_bandung</item>
+        <item>provinsi_jateng</item>
+    </string-array>
+
+    <string-array name="list_daerah_sambutan">
+        <item>SELAMAT DATANG</item>   <item>WILUJENG SUMPING</item> <item>SUGENG RAWUH</item>      </string-array>
+
+    <string name="about_app_text">
+    Nama Aplikasi: Konverter Suhu TX\n
+    Dosen: Donny Maulana, S.Kom., M.M.S.I.,\n
+    Mahasiswa:\n
+    - M.Febiansyah Mulyadi (312410593)\n
+    \n
+    Aplikasi Konverter Suhu TX adalah aplikasi sederhana untuk mengkonversi suhu antara Celcius dan Fahrenheit. Aplikasi ini dibuat sebagai tugas mata kuliah Pemograman Mobile 1.\n
+    \n
+    Fitur utama dari aplikasi ini meliputi:\n
+    • Konversi dari Celcius ke Fahrenheit\n
+    • Konversi dari Fahrenheit ke Celcius\n
+    • Halaman informasi tentang aplikasi\n
+    \n
+    Terima kasih atas perhatiannya, semoga aplikasi ini dapat berfungsi sesuai kebutuhan.
+</string>
+</resources>
